@@ -1,19 +1,17 @@
 function angkaPrima(angka) {
     // you can only write your code here!
     var status = true
-    if (angka === 1){
-      status =false
-    }
-    else if ( angka === 2){
-      status = true
+    if(angka<=1){
+      status = false
     }
     else{
-      for (var i=2 ; i<angka ; i++){
-        if (angka%i === 0){
+      for(var i = 2 ; i<angka ; i++ ){
+        if(angka%i === 0){
           status = false
         }
       }
     }
+
     return status
   }
   // TEST CASES
